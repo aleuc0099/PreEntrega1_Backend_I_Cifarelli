@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const cartsRouter = require("./routes/carts.router.js");
 const productsRouter = require("./routes/products.router.js");
+
 const app = express();
 const PORT = 2806;
 
