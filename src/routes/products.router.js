@@ -1,7 +1,7 @@
-const express = require("express");
-const { write } = require("fs");
+import express from "express";
+import { write } from "fs";
 const router = express.Router();
-const fs = require("fs").promises;
+import fs from "fs/promises";
 
 let products = [];
 
@@ -91,4 +91,4 @@ router.delete("/api/products/:pid", (req, res) => {
   res.json({ msg: "product deleted successfully" });
 });
 
-module.exports = router;
+export default router;

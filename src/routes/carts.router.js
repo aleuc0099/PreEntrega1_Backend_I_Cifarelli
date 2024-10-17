@@ -1,6 +1,6 @@
-const express = require("express");
+import express from "express";
 const router = express.Router();
-const fs = require("fs").promises;
+import fs from "fs/promises";
 
 let carts = [];
 let products = [];
@@ -73,4 +73,4 @@ router.post("/api/carts/:cid/product/:pid", (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;
